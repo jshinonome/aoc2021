@@ -11,10 +11,13 @@ m:"H"$''0:`:09.txt
 
 l:{(0,&1< -':i)_i:&x}'~m=9
 
+/ remove empty list
 l:{x@&0<#:'x}'l
 
+/ list of group in each line
 t:+`r`s`e`g!+{(x@(0,1,-1+#x)),0}',/(!#l),''l
 
+/ scan same group downward and upward
 t:{
     if[&/0<x`g;:x];
     x[i:*&0=x`g;`g]:n:1+|/x`g;
