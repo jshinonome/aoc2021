@@ -9,6 +9,7 @@ m:"H"$''0:`:09.txt
     +//(1+x)*b
  }m
 
+/ Q2
 l:{(0,&1< -':i)_i:&x}'~m=9
 
 / remove empty list
@@ -44,5 +45,5 @@ t:{
  }/t
 
 b:0!select z:+/1+e-s by g from t
-/ Q2
+
 (*/)3# (b`z)@>b`z
